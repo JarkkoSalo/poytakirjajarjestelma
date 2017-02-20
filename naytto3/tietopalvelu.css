@@ -1,0 +1,19 @@
+  .row{
+    background-color: #ededed;
+  }
+body{
+  background-color: #e3e7eb;
+}
+.taulu{
+  display: flex;
+  justify-content: center;
+}
+table td{
+margin: 2em;
+  padding: 1.2em;
+  width: 1200px;
+}
+table th{
+text-align: left;
+  padding: 1.2em; width: 1200px;
+}
