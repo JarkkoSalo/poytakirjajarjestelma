@@ -19,6 +19,11 @@ $telin = $_GET['toimielin'];
       .push {
         height: 9em;
       }
+
+      .nuoli h2{
+        color: #1785cf;
+      }
+
    </style>
  </head>
  <body>
@@ -44,13 +49,12 @@ $telin = $_GET['toimielin'];
         $p = 0;
       foreach($toka as $g) {
         while($p < 1) {
-          echo '<h2 style="text-align: center;"><a href="poytakirja.php?id='. $g["toimielin"].'">'.$g["toimielin"].'</a></h2>';
-          echo "<h2 style='text-align: center; color: blue;'>" . " - " . "</h2>";
-          echo "<h2 style='text-align: center;'>" . $g["kirjanimi"] . "</h2>";
+          echo '<h2 style="text-align: center;"><a href="poytakirja.php?id='. $g["toimielin"].'">'.$g["toimielin"].'</a>'."&nbsp; &gt; &nbsp;". "<span class='nuoli'>".$g["kirjanimi"] . "</span></h2>";
           $p++;
         }
       }
    ?>
+
    <div class="push" style="height: 3em;"> </div>
 <div class="row">
     <?php echo '<a href="test_esim_liitelisays.php?id='.$id."&". "toimielin=" . $telin . '">'."lisää pöytäkirja".'</a>'; ?>
