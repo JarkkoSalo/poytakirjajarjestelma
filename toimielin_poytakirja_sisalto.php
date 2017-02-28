@@ -1,5 +1,5 @@
 <?php
-   $my = new mysqli('localhost','data15','jNTKdg3NTbRBuVEn','data15');
+   $my = new mysqli('localhost','data15','','data15');
          $my->set_charset("utf8");
 $id = $_GET['id'];
 $telin = $_GET['toimielin'];
